@@ -3,12 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "engines": {
+   "node": ">=14"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "npx -n --experimental-vm-modules jest"
   },
   "author": "",
   "license": "ISC",
+   "type": "module",
+   "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
+  "dependencies": {
+    "@jest/globals": "^26.0.1"
+  },
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "jest-cli": "^26.0.1"
   }
 }
